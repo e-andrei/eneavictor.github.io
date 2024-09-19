@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofoliul lui Enea Victor</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: url('/path/to/background-image.jpg') no-repeat center center fixed;
+            background-size: cover;
+            background-attachment: fixed;
+            color: #333;
+        }
+
+        header {
+            background: linear-gradient(135deg, #3498db, #9b59b6);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            font-size: 2.5rem;
+            letter-spacing: 2px;
+        }
+
+        /* Typing effect */
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+        @keyframes blink {
+            50% { border-color: transparent; }
+        }
+        .typewriter h1 {
+            overflow: hidden;
+            border-right: 0.15em solid #3498db;
+            white-space: nowrap;
+            margin: 0 auto;
+            letter-spacing: 0.15em;
+            animation: typing 3.5s steps(40, end), blink 0.75s step-end infinite;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.9);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+            border-radius: 10px;
+            transition: box-shadow 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 18px 40px rgba(0, 0, 0, 0.23);
+        }
+
+        .profile-image, .event-image {
+            display: block;
+            margin: 20px auto;
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            object-fit: cover;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .event-image:hover {
+            transform: scale(1.1);
+        }
+
+        h2, h3 {
+            color: #2980b9;
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style-type: disc;
+            margin: 0 auto;
+            padding: 0;
+            width: fit-content;
+        }
+
+        li {
+            font-size: 1.1rem;
+            margin: 10px 0;
+            color: #555;
+        }
+
+        .links-section a {
+            text-decoration: none;
+            color: #3498db;
+            font-size: 1.3rem;
+            position: relative;
+            transition: color 0.4s;
+        }
+
+        .links-section a:hover {
+            color: #1abc9c;
+            box-shadow: 0 0 10px #1abc9c, 0 0 40px #1abc9c, 0 0 80px #1abc9c;
+        }
+
+        footer {
+            background-color: rgba(44, 62, 80, 0.8);
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+            font-size: 1rem;
+        }
+
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Scroll animation effect */
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+
+        .scroll-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    </style>
+</head>
+<body>
+
+<header class="typewriter">
+    <h1>Portofoliul lui Enea Victor</h1>
+</header>
+
+<div class="container scroll-fade">
+    <section id="about-me">
+        <img src="poza_mea.jpg" alt="Poza mea" class="profile-image">
+        <h2>Despre Mine</h2>
+        <p>Sunt Enea Victor, un elev pasionat de puzzle-uri și muncă dedicată. Particip la olimpiade de fizică, logică și matematică, unde îmi pun la încercare abilitățile analitice și de rezolvare a problemelor.</p>
+    </section>
+
+    <section id="realizari-fizica" class="scroll-fade">
+        <h2>Realizări la Olimpiade</h2>
+        <ul>
+            <li>Locul I Olimpiada Județeană de Logică 2022-2023 și 2023-2024</li>
+            <li>Locul III Olimpiada Județeană de Fizică 2022-2023</li>
+            <li>Locul II Olimpiada Județeană de Fizică 2023-2024</li>
+            <li>Mențiune de Onoare Olimpiada Națională de Fizică 2023-2024</li>
+            <li>Mențiune Olimpiada Județeană de Matematică 2023-2024</li>
+        </ul>
+    </section>
+
+    <section id="evenimente-speciale" class="scroll-fade">
+        <h2>Evenimente Speciale</h2>
+        <h3>Premierea Olimpiadei Naționale de Fizică 2024</h3>
+        <img src="poza_premierea_fizica_2024.jpg" alt="Premierea Olimpiadei Naționale de Fizică 2024" class="event-image">
+        
+        <h3>Premierea Consiliului Județean Bistrița Năsăud 2023</h3>
+        <img src="poza_premierea_cj_2023.jpg" alt="Premierea Consiliului Județean Bistrița Năsăud 2023" class="event-image">
+    </section>
+
+    <section id="realizari-programare" class="scroll-fade">
+        <h2>Profilurile Mele</h2>
+        <p class="links-section">Vizitează profilul meu de PbInfo <a href="https://www.pbinfo.ro/profil/EneaVictorA" target="_blank">aici</a>.</p>
+        <p class="links-section">Vizitează profilul meu de CodinGame <a href="https://www.codingame.com/profile/7682f2bc0736eaf598dfdf4ca456a3517447235" target="_blank">aici</a>.</p>
+        <p class="links-section">Vizitează profilul meu de Codeforces <a href="https://codeforces.com/profile/e_andrei" target="_blank">aici</a>.</p>
+    </section>
+
+    <section id="cursuri-excelenta" class="scroll-fade">
+        <h2>Cursuri de Excelență</h2>
+        <ul>
+            <li>Informatică 2022-2023</li>
+            <li>Informatică 2023-2024</li>
+            <li>Fizică 2023-2024</li>
+        </ul>
+    </section>
+
+    
+
+<footer class="scroll-fade">
+    <p>&copy; 2024 Portofoliul lui Enea Victor - Toate drepturile rezervate</p>
+</footer>
+
+<script>
+    // Scroll animation
+    document.addEventListener("DOMContentLoaded", function() {
+        const scrollElements = document.querySelectorAll('.scroll-fade');
+
+        const elementInView = (el, dividend = 1) => {
+            const elementTop = el.getBoundingClientRect().top;
+            return elementTop <= (window.innerHeight || document.documentElement.clientHeight) / dividend;
+        };
+
+        const displayScrollElement = (element) => {
+            element.classList.add('visible');
+        };
+
+        const hideScrollElement = (element) => {
+            element.classList.remove('visible');
+        };
+
+        const handleScrollAnimation = () => {
+            scrollElements.forEach((el) => {
+                if (elementInView(el, 1.25)) {
+                    displayScrollElement(el);
+                } else {
+                    hideScrollElement(el);
+                }
+            });
+        };
+
+        window.addEventListener('scroll', () => {
+            handleScrollAnimation();
+        });
+    });
+
+    // Counter animation
+    let count = 0;
+    const counter = document.getElementById('counter');
+    const interval = setInterval(() => {
+        counter.innerText = ++count;
+        if (count === 100) clearInterval(interval);
+    }, 20);
+</script>
+
+</body>
+</html>
